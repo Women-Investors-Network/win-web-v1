@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Women Investors Network</title>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css?t=5" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/logo-purple.png">
+		<link rel="icon" type="image/png" href="/images/logo-purple.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/images/logo-purple.png" sizes="16x16">
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://checkout.stripe.com/checkout.js"></script>
+		<script>
+			var handler = StripeCheckout.configure({
+				key: 'pk_test_SEbqitWvlhqHzfInJhmZux3u',
+				image: '/images/logo-purple.png',
+				locale: 'auto',
+				billingAddress: true,
+				token: function(token) {
+					// You can access the token ID with `token.id`.
+					// Get the token ID to your server-side code for use.
+				}
+			});
+			setTimeout(() => {
+				document.getElementById('donate1').addEventListener('click', function(e) {
+					// Open Checkout with further options:
+					handler.open({
+						name: 'Women Investing Network',
+						description: '$50 Donation',
+						amount: 50000
+					});
+					e.preventDefault();
+				});
+				document.getElementById('donate2').addEventListener('click', function(e) {
+					// Open Checkout with further options:
+					handler.open({
+						name: 'Women Investing Network',
+						description: '$100 Donation',
+						amount: 10000
+					});
+					e.preventDefault();
+				});
+				document.getElementById('donate3').addEventListener('click', function(e) {
+					// Open Checkout with further options:
+					handler.open({
+						name: 'Women Investing Network',
+						description: '$200 Donation',
+						amount: 20000
+					});
+					e.preventDefault();
+				});
+				document.getElementById('donateother').addEventListener('click', function(e) {
+					// Open Checkout with further options:
+					handler.open({
+						name: 'Women Investing Network',
+						description: '$200 Donation',
+						amount: 20000
+					});
+					e.preventDefault();
+				});
+				// Close Checkout on page navigation:
+				window.addEventListener('popstate', function() {
+					handler.close();
+				});
+			}, 1000);
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo-white.png" alt="" /></span>
+						<h1>Women Investors Network</h1>
+						<p>A Networking & Mentorship Program For Women In the Investments Industry</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#aboutus" class="active">About Us</a></li>
+							<li><a href="#events">Events</a></li>
+							<li><a href="#mentorship">Mentorship</a></li>
+							<li><a href="#membership">Membership</a></li>
+							<li><a href="#donate">Donate</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="aboutus" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About Us</h2>
+										</header>
+										<p>
+											WIN provides networking events, mentorship opportunities, and other
+											programming to connect, empower, and promote women in the investment
+											industry. The organization currently serves the Central Indiana
+											area.
+										</p>
+										<ul class="actions special">
+										<li><a href="learn-more.html" class="button primary">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image right">
+										<img src="images/woman-tablet-1-resized.jpg" alt="" />
+									</span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="events" class="main">
+								<div class="spotlight">
+									<span class="image left">
+										<img src="images/indy-canal-1-resized.jpg" />
+									</span>	
+									<div class="content">
+										<header class="major">
+											<h2>Events</h2>
+										</header>
+										<p>
+											WIN hosts networking events in the Central Indiana area. Events vary in
+											formality and often feature speakers. All are invited to register for and attend
+											events.
+										</p>
+										<ul class="actions special">
+											<li><a href="https://eventbrite.com/" class="button primary">
+												View Our Upcoming Events
+											</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						<!-- Second Section -->
+							<section id="mentorship" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Mentorship Program</h2>
+										</header>
+										<p>
+											The WIN mentorship program aims to connect women who are early in their
+											investment careers with experienced investment professionals. Members of all
+											levels of experience and backgrounds, including undergraduates, are welcome
+											to apply to be a mentor or mentee.
+										</p>
+										<ul class="actions special">
+											<li><a href="mentorship.html" class="button primary">Interested?</a></li>
+										</ul>
+									</div>
+									<span class="image right">
+										<img src="images/mentorship-1-resized.jpg" />
+									</span>
+								</div>
+							</section>
+
+							<section id="membership" class="main special">
+								<header class="major">
+									<h2>Membership</h2>
+									<p>Members receive access to early event registration, members-only events, and
+										the mentorship program. Both women and men of all levels of investment
+										experience and backgrounds, including undergraduates, are welcome to
+										become members. The standard annual membership fee is $100, or $25 for
+										students.</p>
+								</header>
+							</section>
+
+						<!-- Get Started -->
+							<section id="donate" class="main special">
+								<header class="major">
+									<h2>Donate</h2>
+									<p>
+										Your donations help make our events and programming possible. As a growing
+										organization, we rely on your generosity to bring our plans to fruition. Thank you for
+										your support!
+									</p>
+									<p>For information on sponsorships please contact 
+										<a href="mailto:info@womeninvestorsnetwork.org">
+											info@womeninvestorsnetwork.org
+										</a>
+									</p>
+								</header>
+								<!-- <div style="display: flex; flex-direction: row; width: 100%;">
+									<ul class="actions special">
+										<li><a id="donate1" class="button">$50</a></li>
+									</ul>
+									<ul class="actions special">
+										<li><a id="donate2" class="button">$100</a></li>
+									</ul>
+									<ul class="actions special">
+										<li><a id="donate3" class="button">$200</a></li>
+									</ul>
+									<ul class="actions special">
+										<li><a id="donateother" class="button">Other</a></li>
+									</ul>
+								</div> -->
+								<!-- <footer class="major">
+									
+								</footer> -->
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>
+								Join Our Mailing List
+							</h2>
+							<p>
+								Stay up to date on all the latest news from WIN.
+							</p>
+							<ul class="actions">
+								<li><a href="mailing-list.html" class="button">Sign Up</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Contact Us</h2>
+							<dl class="alt">
+								<dt>Location</dt>
+								<dd>Indianapolis, IN 46204 &bull; USA</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:info@womeninvestorsnetwork.org">
+									info@womeninvestorsnetwork.org
+								</a></dd>
+							</dl>
+							<!-- <ul class="icons">
+								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+							</ul> -->
+						</section>
+						<p class="copyright">&copy; 2019 Women Investors Network, LLC. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

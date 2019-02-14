@@ -14,58 +14,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://checkout.stripe.com/checkout.js"></script>
 		<script>
-			var handler = StripeCheckout.configure({
-				key: 'pk_test_SEbqitWvlhqHzfInJhmZux3u',
-				image: '/images/logo-purple.png',
-				locale: 'auto',
-				billingAddress: true,
-				token: function(token) {
-					// You can access the token ID with `token.id`.
-					// Get the token ID to your server-side code for use.
-				}
-			});
-			setTimeout(() => {
-				document.getElementById('donate1').addEventListener('click', function(e) {
-					// Open Checkout with further options:
-					handler.open({
-						name: 'Women Investing Network',
-						description: '$50 Donation',
-						amount: 50000
-					});
-					e.preventDefault();
-				});
-				document.getElementById('donate2').addEventListener('click', function(e) {
-					// Open Checkout with further options:
-					handler.open({
-						name: 'Women Investing Network',
-						description: '$100 Donation',
-						amount: 10000
-					});
-					e.preventDefault();
-				});
-				document.getElementById('donate3').addEventListener('click', function(e) {
-					// Open Checkout with further options:
-					handler.open({
-						name: 'Women Investing Network',
-						description: '$200 Donation',
-						amount: 20000
-					});
-					e.preventDefault();
-				});
-				document.getElementById('donateother').addEventListener('click', function(e) {
-					// Open Checkout with further options:
-					handler.open({
-						name: 'Women Investing Network',
-						description: '$200 Donation',
-						amount: 20000
-					});
-					e.preventDefault();
-				});
-				// Close Checkout on page navigation:
-				window.addEventListener('popstate', function() {
-					handler.close();
-				});
-			}, 1000);
 		</script>
 	</head>
 	<body class="is-preload">
@@ -173,6 +121,15 @@
 										become members. The standard annual membership fee is $100, or $25 for
 										students.</p>
 								</header>
+								<div>
+									<ul class="actions special">
+										<li>
+											<a class="button primary" href="https://womeninvestorsnetwork.revv.co/memberships">
+												Memberships
+											</a>
+										</li>
+									</ul>
+								</div>
 							</section>
 
 						<!-- Get Started -->
@@ -190,23 +147,15 @@
 										</a>
 									</p>
 								</header>
-								<!-- <div style="display: flex; flex-direction: row; width: 100%;">
+								<div>
 									<ul class="actions special">
-										<li><a id="donate1" class="button">$50</a></li>
+										<li>
+											<a class="button primary" href="https://womeninvestorsnetwork.revv.co/donations">
+												Donate
+											</a>
+										</li>
 									</ul>
-									<ul class="actions special">
-										<li><a id="donate2" class="button">$100</a></li>
-									</ul>
-									<ul class="actions special">
-										<li><a id="donate3" class="button">$200</a></li>
-									</ul>
-									<ul class="actions special">
-										<li><a id="donateother" class="button">Other</a></li>
-									</ul>
-								</div> -->
-								<!-- <footer class="major">
-									
-								</footer> -->
+								</div>
 							</section>
 
 					</div>

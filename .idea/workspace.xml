@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73b596f4-f9d8-486f-a00d-c4b44d5d7956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mentorship.html" beforeDir="false" afterPath="$PROJECT_DIR$/mentorship.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailing-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mailing-list.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mentorship.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="398">
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mailing-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="35" column="26" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="35" selection-end-column="26" />
+            <state relative-caret-position="968">
+              <caret line="63" column="56" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -54,6 +54,7 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/mentorship.html" />
+        <option value="$PROJECT_DIR$/mailing-list.html" />
       </list>
     </option>
   </component>
@@ -132,16 +133,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550104884369</updated>
-      <workItem from="1550104885535" duration="2488000" />
+      <workItem from="1550104885535" duration="2974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2488000" />
+    <option name="totallyTimeSpent" value="2974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="23" width="1868" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25284246" />
@@ -199,20 +199,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mailing-list.html">
+    <entry file="file://$PROJECT_DIR$/mentorship.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="35" selection-end-column="26" />
+        <state relative-caret-position="398">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mentorship.html">
+    <entry file="file://$PROJECT_DIR$/mailing-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="968">
+          <caret line="63" column="56" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

@@ -1,4 +1,5 @@
 deploy:
-- pip install awscli
-- mkdir ./temp-deploy
-- cp -r ./assets ./images ./favicon.ico ./index.html ./learn-more.html ./mailing-list.html ./mentorship.html ./temp-deploy
+  script:
+    - pip install awscli
+    - mkdir ./temp-deploy
+    - cp -r ./assets ./images ./favicon.ico ./index.html ./learn-more.html ./mailing-list.html ./mentorship.html ./temp-deploy

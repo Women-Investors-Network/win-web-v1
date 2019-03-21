@@ -1,8 +1,5 @@
 image: mesosphere/aws-cli
 
-stages:
-  - deploy
-
 deploy:
   script:
     - pip install awscli

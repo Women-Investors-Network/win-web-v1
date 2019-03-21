@@ -1,4 +1,4 @@
-image: mesosphere/aws-cli
+image: ubuntu:18.04
 
 deploy:
   script:

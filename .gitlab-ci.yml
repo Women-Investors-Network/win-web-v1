@@ -1,7 +1,10 @@
 image: python:latest
 
 deploy:
+  only: 
+    - master
   script:
     - pip install awscli
     - mkdir ./temp-deploy
     - cp -r ./assets ./images ./favicon.ico ./index.html ./learn-more.html ./mailing-list.html ./mentorship.html ./temp-deploy
+    - aws s3 sync ./temp-deploy s3://win-website/

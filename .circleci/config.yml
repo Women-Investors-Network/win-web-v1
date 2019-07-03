@@ -1,0 +1,15 @@
+version: 2.1
+orbs:
+  aws-cli: circleci/aws-cli@0.1.13
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy
+jobs:
+  deploy:
+    steps:
+      - checkout
+      - run: mkdir ./temp-deploy
+      - run: cp -r ./assets ./images ./favicon.ico ./*.html ./temp-deploy
+      - run: aws s3 sync ./temp-deploy s3://win-website/

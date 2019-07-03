@@ -8,6 +8,8 @@ workflows:
       - deploy
 jobs:
   deploy:
+    docker:
+      image: circleci/buildpack-deps
     steps:
       - checkout
       - run: mkdir ./temp-deploy

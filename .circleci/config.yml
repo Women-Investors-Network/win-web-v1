@@ -5,8 +5,14 @@ workflows:
   version: 2.1
   deploy:
     jobs:
+      - setup
       - deploy
 jobs:
+  setup:
+    executor: aws-cli/default
+    steps:
+      - aws-cli/install
+      - aws-cli/configure
   deploy:
     docker:
       - image: circleci/buildpack-deps

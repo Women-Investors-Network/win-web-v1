@@ -14,6 +14,8 @@ jobs:
       - aws-cli/install
       - aws-cli/configure
   deploy:
+    requires:
+      - setup
     docker:
       - image: circleci/buildpack-deps
     steps:
